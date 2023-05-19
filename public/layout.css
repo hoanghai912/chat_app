@@ -1,0 +1,104 @@
+html{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(214, 209, 209);
+}
+
+#wrapper {
+    width: 700px;
+    margin: auto;
+}
+
+#loginForm {
+    margin-bottom: 10px;
+}
+
+#loginForm2 {
+    margin-top: 30%;
+}
+
+/* #txtUsername {
+    background-color: transparent;
+} */
+
+#left, #right {
+    min-height: 30px;
+}
+
+#left {
+    width: 30%;
+    float: left;
+    background-color: rgb(144, 243, 210);
+}
+
+#right {
+    width: 65%;
+    float: right;
+    background-color: rgb(195, 233, 121);
+    margin-left: 20px;
+}
+
+#boxTitle {
+    border: solid 1px black;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#boxContent {
+    border: solid 1px black;
+    text-align: center;
+    padding: 5px;
+}
+
+#sayHi {
+    text-align: right;
+}
+
+#listMessage {
+    height: 300px;
+    background-color: #ffff;
+    margin-bottom: 15px;
+}
+
+.user {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.user:hover {
+    background-color: antiquewhite;
+}
+
+#boxContent {
+    list-style-type: none;
+}
+
+.msl {
+    text-align: left;
+    padding-left: 10px;
+    background-color:rgb(214, 209, 209);
+}
+
+.msr {
+    text-align: right;
+    padding-right: 10px;
+}
+
+video {
+    display: none;
+}
+
+.vid {
+    display: none;
+}
+
+#btnCall {
+    margin-bottom: 20px;
+}
+
+ul {
+    margin: 0;
+}

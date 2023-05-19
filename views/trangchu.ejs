@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Demo Chat</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="layout.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- <div id="loginForm">
+            <h3>Login Or Register</h3>
+            <input type="text" id="txtUsername">
+            <input type="text" id="txtPassword">
+            <input type="button" value="Login" id="btnLogin">
+            <input type="button" value="Register" id="btnRegister">
+        </div> -->
+
+        <div id="loginForm2"><h1 style="text-align:center">Login Or Register</h1>
+            <form>
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <label class="form-label">Username</label>
+                    <input type="text" id="txtUsername" class="form-control" />
+                    
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4" style="margin-bottom: 20px"''>
+                    <label class="form-label">Password</label>
+                    <input type="password" id="txtPassword" class="form-control" />
+                    
+                </div>
+
+                <!-- Submit button -->
+                <button type="button" class="btn btn-primary btn-block mb-4" id="btnLogin">Login</button>
+                <button type="button" class="btn btn-primary btn-block mb-4" id="btnRegister">Register</button>
+
+            </form>
+        </div>
+
+        <div id="chatForm">
+            <div id="left">
+                <div id="boxTitle">User Online</div>
+                <ul id="boxContent">
+
+                </ul>
+            </div>
+
+            <div id="right">
+                <div id="sayHi">
+                    Hello <span id="currentUser">A</span>
+                    <input type="button" id="btnLogout" value="Logout">
+                </div>
+
+                <div id="listMessage">
+
+                </div>
+
+                <div id="thongbao">
+
+                </div>
+
+                <input type="text" id="txtMessage">
+                <input type="button" id="btnSendMessage" value="Send">
+
+                <input type="button" id="btnCall" value="Call Video">
+                <input type="button" id="btnStopCall" value="Stop Call">
+                <input type="file" id="fileInput" name="filename">
+
+                <div style="margin-top: 20px" class="vid">My Video</div>
+                <video id="localStream" class="vid" width="300" controls>My Video</video>
+                <br /><br />
+                <div class="vid">Other Video</div>
+                <video id="remoteStream" class="vid" width="300" controls>Remote Video</video>
+                <br /><br />
+            </div>
+        </div>
+
+    </div>
+    <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+    <script src="xuly.js"></script>
+
+</body>
+
+</html>
